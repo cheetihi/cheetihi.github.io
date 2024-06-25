@@ -282,10 +282,6 @@ body {
     transform: translateY(-10px);
 }
 
-/* section {
-    display: flex;
-} */
-
 
 .container1 {
     float: left;
@@ -309,7 +305,7 @@ body {
 }
 
 .Technical-bars .bar {
-    margin-top: 40px 0;
+    margin: 40px 0;
 
 }
 
@@ -412,8 +408,8 @@ body {
     content: "75%";
 }
 
-.progress-line span::after {
-    content: "90%";
+.progress-line span::before {
+    content: "";
     position: absolute;
     width: 0;
     height: 0;
@@ -442,14 +438,14 @@ body {
     align-items: flex-start;
 }
 
-.radial-bars .radial-bars {
+.radial-bars .radial-bar {
     width: 50%;
     height: 170px;
     margin-bottom: 10px;
     position: relative;
 }
 
-.radial-bars .radial-bars svg {
+.radial-bars .radial-bar svg {
     position: relative;
     top: 50%;
     left: 50%;
@@ -458,7 +454,7 @@ body {
     height: 160px;
 }
 
-.radial-bars .radial-bars .progress-bar {
+.radial-bars .radial-bar .progress-bar {
     stroke-width: 10;
     stop-color: black;
     fill: transparent;
