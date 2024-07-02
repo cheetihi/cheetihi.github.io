@@ -9,6 +9,7 @@
 body {
     color: #ededed;
     background: #081b29;
+    width: fit-content;
 
 }
 
@@ -32,7 +33,6 @@ body {
     text-decoration: none;
     font-weight: 700;
     cursor: default;
-    opacity: 0;
     animation: slideRight is ease forwards;
 
 }
@@ -67,6 +67,17 @@ body {
     display: flex;
     align-items: center;
     padding: 70px 10% 0;
+}
+
+
+/* Media query for mobile view */
+@media (max-width: 677px) {
+    .home {
+        background-position: right center; /* Focus on the right half of the image */
+        background-size: 200% auto; /* Scale the image so that only the right half is visible */
+        padding: 50px 5% 0; /* Adjust padding for smaller screens */
+        box-sizing: border-box;
+    }
 }
 
 .home-content {
@@ -800,3 +811,85 @@ body {
         opacity: 1;
     }
 }
+
+/* Nav bar css - start */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    
+    color: #fff;
+}
+
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 4px 0;
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        flex-direction: column;
+     
+    }
+
+    .nav-links li {
+        text-align: center;
+        margin: 15px 0;
+    }
+
+    .nav-links a {
+        font-size: 1.5em;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+}
+
+
+
+/* Nav bar css - end */
