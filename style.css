@@ -370,7 +370,7 @@ body {
 }
 
 .progress-line.css span {
-    width: 60%;
+    width: 90%;
 }
 
 .progress-line.javascript span {
@@ -378,12 +378,21 @@ body {
 }
 
 .progress-line.python span {
-    width: 50%;
+    width: 70%;
 }
 
 .progress-line.react span {
     width: 75%;
 }
+
+.progress-line.SQL_No-SQL span {
+    width: 85%;
+}
+
+.progress-line.cloud span {
+    width: 85%;
+}
+
 .progress-line span::after {
     position: absolute;
     padding: 1px 8px;
@@ -404,7 +413,7 @@ body {
 }
 
 .progress-line.css span::after {
-    content: "60%";
+    content: "90%";
 }
 
 .progress-line.javacript span::after {
@@ -412,11 +421,19 @@ body {
 }
 
 .progress-line.python span::after {
-    content: "50%";
+    content: "70%";
 }
 
 .progress-line.react span::after {
     content: "75%";
+}
+
+.progress-line.SQL_No-SQL span::after {
+    content: "85%";
+}
+
+.progress-line.cloud span::after {
+    content: "85%";
 }
 
 .progress-line span::before {
@@ -482,7 +499,7 @@ body {
     stroke-width: 10;
     stroke: #0ef;
     fill: transparent;
-    stroke-dasharray: 502;
+    stroke-dasharray: 552;
     stroke-dashoffset: 502;
     stroke-linecap: round;
 }
@@ -505,24 +522,24 @@ body {
 
 @keyframes animate-path1 {
     100% {
-        stroke-dashoffset: 50;
+        stroke-dashoffset: 90;
     }
 }
 @keyframes animate-path2 {
     100% {
-        stroke-dashoffset: 175;
+        stroke-dashoffset: 75;
     }
 }
 
 @keyframes animate-path3 {
     100% {
-        stroke-dashoffset: 125;
+        stroke-dashoffset: 95;
     }
 }
 
 @keyframes animate-path4 {
     100% {
-        stroke-dashoffset: 75;
+        stroke-dashoffset: 105;
     }
 }
 .radial-bars .percentage {
@@ -550,7 +567,7 @@ body {
 
 
 .main-text {
-    padding-top: 700px;
+    padding-top: 800px;
     margin-top: 130px;
     
 }
