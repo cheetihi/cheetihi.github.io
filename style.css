@@ -407,7 +407,6 @@ body {
 }
 
 
-
 .progress-line.html span::after {
     content: "90%";
 }
